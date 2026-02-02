@@ -791,7 +791,7 @@
   <h1>Module's Requirements</h1>
 
 <h2 id="module-requirements">Module Requirements</h2>
-<p>The following sections document the requirements that the this module need to fulfills to .....</p>
+<p>My responsibility for this project is to use a temperature sensor that will detect the water's temperature in celsius and will be displayed to the user on the OLED screen implemented in our Human Machine Interface(HMI)</p>
 <table>
 <thead>
 <tr>
@@ -803,7 +803,7 @@
 </thead>
 <tbody>
 <tr>
-<td>Surface mounted, 3.3V switching power regulatore</td>
+<td>Surface mounted, 3.3V switching power regulator</td>
 <td>3.2 Volts</td>
 <td>3.3 Volts</td>
 <td style="text-align: center;">No</td>
@@ -821,9 +821,33 @@
 <td style="text-align: center;">Yes</td>
 </tr>
 <tr>
-<td><em>Rest are items your modules needs to support the task you are covering for the team's device.</em></td>
-<td>---</td>
-<td>---</td>
+<td>Shared power rail</td>
+<td>3.2 volts</td>
+<td>3.3 volts</td>
+<td style="text-align: center;"><strong>NO</strong></td>
+</tr>
+<tr>
+<td>I2C Communication Interface</td>
+<td>I2C Communication</td>
+<td>I2C with selectable address</td>
+<td style="text-align: center;"><strong>NO</strong></td>
+</tr>
+<tr>
+<td>Shared power rail</td>
+<td>3.2 volts</td>
+<td>3.3 volts</td>
+<td style="text-align: center;"><strong>NO</strong></td>
+</tr>
+<tr>
+<td>Temperature Sensor</td>
+<td>Celsius</td>
+<td>± 1 celsius accuracy</td>
+<td style="text-align: center;"><strong>NO</strong></td>
+</tr>
+<tr>
+<td>Data transmission to MCU and HMI</td>
+<td>Serial UART at 9600 baud</td>
+<td>I2C AND wireless transmission</td>
 <td style="text-align: center;"><strong>NO</strong></td>
 </tr>
 </tbody>
