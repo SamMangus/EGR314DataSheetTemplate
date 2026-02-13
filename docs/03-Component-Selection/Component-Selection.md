@@ -19,25 +19,12 @@ The following sections are the selected major components necessary for my subsys
 
 **Voltage Regulator**
 
-1. XC1259TR-ND surface mount crystal
+1. MIC5501-3.0YM5-TR
 
-    ![](image1.png)
+    ![](VReg1.webp)
 
-    * $1/each
-    * [link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)
-
-    | Pros                                      | Cons                                                             |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
-
-2. XC1259TR-ND surface mount crystal
-
-    ![](image1.png)
-
-    * $1/each
-    * [link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)
+    * $0.12/each
+    * [link to product](https://www.digikey.com/en/products/detail/microchip-technology/MIC5501-3-0YM5-TR/5277873)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
@@ -45,12 +32,69 @@ The following sections are the selected major components necessary for my subsys
     | Compatible with PSoC                      | Needs special PCB layout.                                        |
     | Meets surface mount constraint of project |
 
-3. XC1259TR-ND surface mount crystal
+2. MIC5504-3.3YM5-TR
 
-    ![](image1.png)
+    ![](VReg2.webp)
 
-    * $1/each
-    * [link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)
+    * $0.16/each
+    * [link to product](https://www.digikey.com/en/products/detail/microchip-technology/MIC5504-3-3YM5-TR/4864018)
+
+    | Pros                                      | Cons                                                             |
+    | ----------------------------------------- | ---------------------------------------------------------------- |
+    | Inexpensive                               | Requires external components and support circuitry for interface |
+    | Compatible with PSoC                      | Needs special PCB layout.                                        |
+    | Meets surface mount constraint of project |
+
+3. AP2112K-3.3TRG1
+
+    ![](VReg3.webp)
+
+    * $0.22/each
+    * [link to product](https://www.digikey.com/en/products/detail/diodes-incorporated/AP2112K-3-3TRG1/4470746)
+
+    | Pros                                      | Cons                                                             |
+    | ----------------------------------------- | ---------------------------------------------------------------- |
+    | Inexpensive                               | Requires external components and support circuitry for interface |
+    | Compatible with PSoC                      | Needs special PCB layout.                                        |
+    | Meets surface mount constraint of project |
+
+
+**Rationale:** A clock oscillator is easier ...
+
+**Temperature Sensor**
+
+1. MIC5501-3.0YM5-TR
+
+    ![](VReg1.webp)
+
+    * $0.12/each
+    * [link to product](https://www.digikey.com/en/products/detail/microchip-technology/MIC5501-3-0YM5-TR/5277873)
+
+    | Pros                                      | Cons                                                             |
+    | ----------------------------------------- | ---------------------------------------------------------------- |
+    | Inexpensive                               | Requires external components and support circuitry for interface |
+    | Compatible with PSoC                      | Needs special PCB layout.                                        |
+    | Meets surface mount constraint of project |
+
+2. MIC5504-3.3YM5-TR
+
+    ![](VReg2.webp)
+
+    * $0.16/each
+    * [link to product](https://www.digikey.com/en/products/detail/microchip-technology/MIC5504-3-3YM5-TR/4864018)
+
+    | Pros                                      | Cons                                                             |
+    | ----------------------------------------- | ---------------------------------------------------------------- |
+    | Inexpensive                               | Requires external components and support circuitry for interface |
+    | Compatible with PSoC                      | Needs special PCB layout.                                        |
+    | Meets surface mount constraint of project |
+
+3. AP2112K-3.3TRG1
+
+    ![](VReg3.webp)
+
+    * $0.22/each
+    * [link to product](https://www.digikey.com/en/products/detail/diodes-incorporated/AP2112K-3-3TRG1/4470746)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
