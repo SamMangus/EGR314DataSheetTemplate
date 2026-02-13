@@ -13,7 +13,7 @@ The following sections are the selected major components necessary for my subsys
 ### Sensor
 
 
-### Style 2
+### Component Selection
 
 > Also acceptable, more markdown friendly
 
@@ -73,7 +73,7 @@ The following sections are the selected major components necessary for my subsys
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
     | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
+    | 300 mA output                             | Outputs 3V possibly too low for my needs                         |
     | Meets surface mount constraint of project |
 
 2. MIC5504-3.3YM5-TR
@@ -85,8 +85,8 @@ The following sections are the selected major components necessary for my subsys
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
+    | 3.3V output                               | Supply voltage max of 6V                                         |
+    | Small footprint                           | Needs special PCB layout.                                        |
     | Meets surface mount constraint of project |
 
 3. AP2112K-3.3TRG1
