@@ -859,11 +859,10 @@
 <h2 id="modules-selected-major-components">Module's Selected Major Components</h2>
 <p>The following sections are the selected major components necessary for my subsystem that will be used to detect the temperature of water and then communicate that information to our control board.</p>
 <h3 id="power-management">Power Management</h3>
+<p>I will proceed with option 3 for now because the other 2 regulators only offer 300 mA of output current which could potentially cause problems down the line if I need to add any other components to my subsystem the current draw could potentially exceed 300 mA.</p>
 <h3 id="sensor">Sensor</h3>
+<p>I will move forward with the first option given it's output is available as an 8-bit digital word and interfaces with I2C, while it is the most expensive of the three it has the highest temperature detection range and is more versatile than the other 2 and offers the highest accuracy. </p>
 <h3 id="component-selection">Component Selection</h3>
-<blockquote>
-<p>Also acceptable, more markdown friendly</p>
-</blockquote>
 <p><strong>Voltage Regulator</strong></p>
 <ol>
 <li>
@@ -945,15 +944,14 @@
 </table>
 </li>
 </ol>
-<p><strong>Rationale:</strong> A clock oscillator is easier ...</p>
 <p><strong>Temperature Sensor</strong></p>
 <ol>
 <li>
-<p>MIC5501-3.0YM5-TR</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../VReg1.webp" data-desc-position="bottom"><img alt="" src="../VReg1.webp"></a></p>
+<p>TC74A4-3.3VCTTR</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../TSens1.webp" data-desc-position="bottom"><img alt="" src="../TSens1.webp"></a></p>
 <ul>
-<li>$0.12/each</li>
-<li><a href="https://www.digikey.com/en/products/detail/microchip-technology/MIC5501-3-0YM5-TR/5277873">link to product</a></li>
+<li>$1.15/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/microchip-technology/TC74A4-3-3VCTTR/443268">link to product</a></li>
 </ul>
 <table>
 <thead>
@@ -964,11 +962,11 @@
 </thead>
 <tbody>
 <tr>
-<td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
+<td>Data is output as an 8-bit digital word</td>
+<td>Most expensive</td>
 </tr>
 <tr>
-<td>300 mA output</td>
+<td>I2C communication</td>
 <td>Outputs 3V possibly too low for my needs</td>
 </tr>
 <tr>
@@ -979,12 +977,10 @@
 </table>
 </li>
 <li>
-<p>MIC5504-3.3YM5-TR</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../VReg2.webp" data-desc-position="bottom"><img alt="" src="../VReg2.webp"></a></p>
-<ul>
-<li>$0.16/each</li>
-<li><a href="https://www.digikey.com/en/products/detail/microchip-technology/MIC5504-3-3YM5-TR/4864018">link to product</a></li>
-</ul>
+<p>TMP235A4DBZR</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../TSens2.webp" data-desc-position="bottom"><img alt="" src="../TSens2.webp"></a>
+* $0.36/each
+* <a href="https://www.digikey.com/en/products/detail/texas-instruments/TMP235A4DBZR/9649794?_gl=1*1k6yvko*_up*MQ..*_gs*Nw..&amp;gclid=398fcc593c8d13f28ddea5d692e6e634&amp;gclsrc=3p.ds">link to product</a></p>
 <table>
 <thead>
 <tr>
@@ -994,26 +990,26 @@
 </thead>
 <tbody>
 <tr>
-<td>3.3V output</td>
-<td>Supply voltage max of 6V</td>
+<td>Simple design</td>
+<td>Analog output</td>
 </tr>
 <tr>
 <td>Small footprint</td>
-<td>Needs special PCB layout.</td>
+<td>Doesn't meet project requirements for sensing types</td>
 </tr>
 <tr>
-<td>Meets surface mount constraint of project</td>
+<td>Easy to surface mount only 3 legs</td>
 <td></td>
 </tr>
 </tbody>
 </table>
 </li>
 <li>
-<p>AP2112K-3.3TRG1</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../VReg3.webp" data-desc-position="bottom"><img alt="" src="../VReg3.webp"></a></p>
+<p>MCP9701T-E/TT</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../TSens3.webp" data-desc-position="bottom"><img alt="" src="../TSens3.webp"></a></p>
 <ul>
-<li>$0.22/each</li>
-<li><a href="https://www.digikey.com/en/products/detail/diodes-incorporated/AP2112K-3-3TRG1/4470746">link to product</a></li>
+<li>$0.40/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/microchip-technology/MCP9701T-E-TT/1987445?_gl=1*1k6yvko*_up*MQ..*_gs*Nw..&amp;gclid=398fcc593c8d13f28ddea5d692e6e634&amp;gclsrc=3p.ds">link to product</a></li>
 </ul>
 <table>
 <thead>
@@ -1024,22 +1020,17 @@
 </thead>
 <tbody>
 <tr>
-<td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
+<td>Up to 6V input</td>
+<td>Lowest temperature sensing range</td>
 </tr>
 <tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
-</tr>
-<tr>
-<td>Meets surface mount constraint of project</td>
-<td></td>
+<td>Low operating current 6mA</td>
+<td>Output only available as an analog signal</td>
 </tr>
 </tbody>
 </table>
 </li>
 </ol>
-<p><strong>Rationale:</strong> A clock oscillator is easier ...</p>
 
 
 
