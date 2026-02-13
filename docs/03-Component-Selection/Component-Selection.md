@@ -28,9 +28,9 @@ The following sections are the selected major components necessary for my subsys
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
+    | Inexpensive                               | Higher output voltage variance                                   |
+    | Small footprint                           | More difficult to surface mount                                  |
+
 
 2. MIC5504-3.3YM5-TR
 
@@ -41,9 +41,9 @@ The following sections are the selected major components necessary for my subsys
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
+    | Inexpensive                               | Low output current                                               |
+    | Easy to surface mount                     | Limited input voltage of 6V                                      |
+    
 
 3. AP2112K-3.3TRG1
 
@@ -54,9 +54,9 @@ The following sections are the selected major components necessary for my subsys
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
+    | Output current of 600 mA                  | No over voltage protection                                       |
+    | -40 to +85 Celsius operating range        | Limited input voltage of 6V                                      |
+
 
 
 **Rationale:** A clock oscillator is easier ...
