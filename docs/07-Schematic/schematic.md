@@ -4,13 +4,13 @@ title: Module Schematic
 
 ## Overview
 
-This schematic is design to support .... (highlight functionally, power, and controller).
+This schematic is design to support temperature sensing in celsius by utilizing a TC74A4 and PIC18F47K42 and relay that information via UART and our team connectors to our control board being operated by Adrian.
 
 
-![schematic](Screenshot.png){style width:"350" height:"300;"}
-**Figure ##:** Showing a example schematic.
+![schematic](TempSensor.png){style width:"350" height:"300;"}
+**Temperature Subsystem** 
 
 
-## Resouces
+## Resources
 
-The schematic as a PDF download is available [*here*](ExampleSchematic.pdf), and the Zip folder of the project [*here*](dummyZip.zip).
+The schematic as a PDF download is available [*here*](TempSensor314.pdf), and the Zip folder of the project [*here*](EGR314_Subsystem.zip).
