@@ -636,6 +636,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#microcontroller" class="md-nav__link">
+    <span class="md-ellipsis">
+      Microcontroller
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#component-selection" class="md-nav__link">
     <span class="md-ellipsis">
       Component Selection
@@ -958,6 +967,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#microcontroller" class="md-nav__link">
+    <span class="md-ellipsis">
+      Microcontroller
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#component-selection" class="md-nav__link">
     <span class="md-ellipsis">
       Component Selection
@@ -994,6 +1012,8 @@
 <p>I will proceed with option 3 for now because the other 2 regulators only offer 300 mA of output current which could potentially cause problems down the line if I need to add any other components to my subsystem the current draw could potentially exceed 300 mA.</p>
 <h3 id="sensor">Sensor</h3>
 <p>I will move forward with the first option given it's output is available as an 8-bit digital word and interfaces with I2C, while it is the most expensive of the three it has the highest temperature detection range and is more versatile than the other 2 and offers the highest accuracy. </p>
+<h3 id="microcontroller">Microcontroller</h3>
+<p>I will move forward with option 2 due to it having all the required I2C and ISCP support while also offering leads on the pins which will make it significantly easier to solder and debug as opposed to the other options and it is a commonly used chip in other project so theres many applications I can find to help support my design.</p>
 <h3 id="component-selection">Component Selection</h3>
 <p><strong>Voltage Regulator</strong></p>
 <ol>
@@ -1158,6 +1178,95 @@
 <tr>
 <td>Low operating current 6mA</td>
 <td>Output only available as an analog signal</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<p><strong>Microcontroller</strong></p>
+<ol>
+<li>
+<p>PIC18F47K42T-I/MV</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../Ctrl1.webp" data-desc-position="bottom"><img alt="" src="../Ctrl1.webp"></a>
+* $2.72/each
+* <a href="https://www.digikey.com/en/products/detail/microchip-technology/PIC18F47K42T-I-MV/7561728">link to product</a></p>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Small footprint</td>
+<td>Difficult to solder</td>
+</tr>
+<tr>
+<td>Less prone to noise</td>
+<td>Difficult to debug</td>
+</tr>
+<tr>
+<td>Meets surface mount constraint of project</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>PIC18F47K42-I/PT</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../Ctrl2.webp" data-desc-position="bottom"><img alt="" src="../Ctrl2.webp"></a>
+* $2.79/each
+* <a href="https://www.digikey.com/en/products/detail/microchip-technology/PIC18F47K42-I-PT/7561733">link to product</a></p>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ICSP and I2C pins</td>
+<td>Larger footprint</td>
+</tr>
+<tr>
+<td>Easy to solder with exposed pins</td>
+<td>Legs could be damaged easily</td>
+</tr>
+<tr>
+<td>Easy to debug</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>PIC18F47K42-E/ML</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../Ctrl3.webp" data-desc-position="bottom"><img alt="" src="../Ctrl3.webp"></a></p>
+<ul>
+<li>$2.86/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/microchip-technology/PIC18F47K42-E-ML/7561744">link to product</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>40 pin package</td>
+<td>Most expensive</td>
+</tr>
+<tr>
+<td>Smallest footprint</td>
+<td>Difficult to solder</td>
+</tr>
+<tr>
+<td>High operating temperature range</td>
+<td></td>
 </tr>
 </tbody>
 </table>
