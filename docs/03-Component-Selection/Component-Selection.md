@@ -14,6 +14,10 @@ I will proceed with option 3 for now because the other 2 regulators only offer 3
 
 I will move forward with the first option given it's output is available as an 8-bit digital word and interfaces with I2C, while it is the most expensive of the three it has the highest temperature detection range and is more versatile than the other 2 and offers the highest accuracy. 
 
+### Microcontroller 
+
+I will move forward with option 2 due to it having all the required I2C and ISCP support while also offering leads on the pins which will make it significantly easier to solder and debug as opposed to the other options and it is a commonly used chip in other project so theres many applications I can find to help support my design.
+
 ### Component Selection
 
 **Voltage Regulator**
@@ -93,5 +97,41 @@ I will move forward with the first option given it's output is available as an 8
     | Up to 6V input                            | Lowest temperature sensing range                                 |
     | Low operating current 6mA                 | Output only available as an analog signal                        |
 
+**Microcontroller**
 
+1. PIC18F47K42T-I/MV
 
+    ![](Ctrl1.webp)
+    * $2.72/each
+    * [link to product](https://www.digikey.com/en/products/detail/microchip-technology/PIC18F47K42T-I-MV/7561728)
+
+    | Pros                                      | Cons                                                             |
+    | ----------------------------------------- | ---------------------------------------------------------------- |
+    | Small footprint                           | Difficult to solder                                              |
+    | Less prone to noise                       | Difficult to debug                                               |
+    | Meets surface mount constraint of project |
+
+2. PIC18F47K42-I/PT
+
+    ![](Ctrl2.webp)
+    * $2.79/each
+    * [link to product](https://www.digikey.com/en/products/detail/microchip-technology/PIC18F47K42-I-PT/7561733)
+
+    | Pros                                      | Cons                                                             |
+    | ----------------------------------------- | ---------------------------------------------------------------- |
+    | ICSP and I2C pins                         | Larger footprint                                                 |
+    | Easy to solder with exposed pins          | Legs could be damaged easily                                     |
+    | Easy to debug                             |
+
+3. PIC18F47K42-E/ML
+
+    ![](Ctrl3.webp)
+
+    * $2.86/each
+    * [link to product](https://www.digikey.com/en/products/detail/microchip-technology/PIC18F47K42-E-ML/7561744)
+
+    | Pros                                      | Cons                                                             |
+    | ----------------------------------------- | ---------------------------------------------------------------- |
+    | 40 pin package                            | Most expensive                                                   |
+    | Smallest footprint                        | Difficult to solder                                              |
+    | High operating temperature range          | 
