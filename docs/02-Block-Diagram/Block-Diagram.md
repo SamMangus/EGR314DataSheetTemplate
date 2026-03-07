@@ -13,7 +13,7 @@ My subsystem for the project will be responsible for sensing water temperature i
 
 ## Temperature Sensor Block Diagram 
 
-![Temperature Sensor Block diagram ](EGR314blockdia.png)
+![Temperature Sensor Block diagram ](Blockdia.png)
 
 
 ## Download
