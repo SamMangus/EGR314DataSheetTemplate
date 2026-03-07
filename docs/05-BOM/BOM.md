@@ -14,4 +14,4 @@ This BOM gives a broad overview of all the components being used in my portion o
 
 ## Resources
 
-The Bill of Material as a PDF download is available [*here*](egr314_BOM.pdf) and as a excel filer [*here*](egr314_BOM.xlsx)
+The Bill of Material as a PDF download is available [*here*](egr314_BOM.pdf) and as a excel file [*here*](egr314_BOM.xlsx)
