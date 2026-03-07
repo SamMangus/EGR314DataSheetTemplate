@@ -4,7 +4,7 @@ title: Power Budget
 
 ## Overview
 
-This is the forst version of my power budget that will help our team determine the power need for our project
+This is the first version of my power budget that will help our team determine the power need for our project
 
 ## Power Budget 
 
