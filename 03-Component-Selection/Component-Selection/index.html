@@ -678,6 +678,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#final-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Components
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1055,6 +1064,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#final-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Components
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1075,7 +1093,7 @@
 <h2 id="modules-selected-major-components">Module's Selected Major Components</h2>
 <p>The following sections are the selected major components necessary for my subsystem that will be used to detect the temperature of water and then communicate that information to our control board.</p>
 <h3 id="power-management">Power Management</h3>
-<p>I will proceed with option 3 for now because the other 2 regulators only offer 300 mA of output current which could potentially cause problems down the line if I need to add any other components to my subsystem the current draw could potentially exceed 300 mA.</p>
+<p>I will proceed with option 1 due to it's higher voltage input availability and it meeting the requirements of being a switching regulator although it is the most expensive of the three and will be the most difficult to solder due to it having pads instead of leads the pro's still outweigh the cones</p>
 <h3 id="sensor">Sensor</h3>
 <p>I will move forward with the first option given it's output is available as an 8-bit digital word and interfaces with I2C, while it is the most expensive of the three it has the highest temperature detection range and is more versatile than the other 2 and offers the highest accuracy. </p>
 <h3 id="microcontroller">Microcontroller</h3>
@@ -1084,11 +1102,11 @@
 <p><strong>Voltage Regulator</strong></p>
 <ol>
 <li>
-<p>MIC5501-3.0YM5-TR</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../VReg1.webp" data-desc-position="bottom"><img alt="" src="../VReg1.webp"></a></p>
+<p>MIC23050-SYML-TR</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="VReg1.jpeg" data-desc-position="bottom"><img alt="" src="VReg1.jpeg"></a></p>
 <ul>
-<li>$0.12/each</li>
-<li><a href="https://www.digikey.com/en/products/detail/microchip-technology/MIC5501-3-0YM5-TR/5277873">link to product</a></li>
+<li>$0.53/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/microchip-technology/MIC23050-SYML-TR/1980888">link to product</a></li>
 </ul>
 <table>
 <thead>
@@ -1099,12 +1117,12 @@
 </thead>
 <tbody>
 <tr>
-<td>Inexpensive</td>
-<td>Higher output voltage variance</td>
+<td>Switching regulator</td>
+<td>Difficult for smd</td>
 </tr>
 <tr>
 <td>Small footprint</td>
-<td>More difficult to surface mount</td>
+<td>More expensive</td>
 </tr>
 </tbody>
 </table>
@@ -1156,7 +1174,7 @@
 </tr>
 <tr>
 <td>-40 to +85 Celsius operating range</td>
-<td>Limited input voltage of 6V</td>
+<td>Non switching doesn't meet requirements</td>
 </tr>
 </tbody>
 </table>
@@ -1333,6 +1351,29 @@
 <tr>
 <td>High operating temperature range</td>
 <td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="final-components">Final Components</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microcontroller</td>
+<td>PIC18F47K42</td>
+</tr>
+<tr>
+<td>Voltage Regulator</td>
+<td>MIC23050-SYML-TR</td>
+</tr>
+<tr>
+<td>Temperature Sensor</td>
+<td>TC74A4</td>
 </tr>
 </tbody>
 </table>
