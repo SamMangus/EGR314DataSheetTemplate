@@ -4,15 +4,15 @@ title: Microcontroller Selection
 
 ## Subsystem Responsibilities
 
-My subsystem will be responsible for detecting the temperature of water and then conveying the to our control board being operated by Adrian. I will be using a TC74A4-3.3VCTTR temperature sensor that has an operating current of 200 mA, and since I will be using the PIC18F47K42 my subsystem will only need 3.3V and around 250 mA of current to operate safely which allows the rest of my team more flexibility with their designs. We will be communicating via UART and I will be sending an 8-bit digital word to Adrian. 
+My subsystem will be responsible for detecting the temperature of water and then conveying the to our control board being operated by Adrian. I will be using a TC74A4-3.3VCTTR temperature sensor that has an operating current of 20 mA, and since I will be using the PIC18F47K42 my subsystem will only need 3.3V and around 50 mA of current to operate safely which allows the rest of my team more flexibility with their designs. We will be communicating via UART and I will be sending to Adrian. 
 
 ## Temperature Sensor MPLabX Configuration 
 
-![Temperature Sensor Config](TempConfig.png)
+![Temperature Sensor Config](TQFP44.png)
 
 ## Pin Functions
 
-RC3 is my TX and will be sending the 8-Bit data to Adrians control board so he can use it to display the information to the user. I will be using RB0 as a GPIO to simply have a debugging LED so I can troubleshoot my code. Finally we have RB6 and RB7 which are my serial clock/data and are going to be connected to their respective pins on the temperature sensor and will be responsible for reading the data and converting into an 8-Bit digital word that I will then be able to send to my teammates via UART.
+RC3 is my TX and will be sending the data to Adrians control board so he can use it to display the information to the user RC2 is my rx and will be used to receive status request and forwards teammates messages down the chain. I will be using RE0 as a GPIO to simply have a debugging LED so I can troubleshoot my code. RB0 and RB1 are my SDA and SCL respectively which will be my I2C communication that will be connect to the associated pins of my temperature sensor so I will be able to detect ambient temperature in celsius. 
 
 ## Final Selection
 

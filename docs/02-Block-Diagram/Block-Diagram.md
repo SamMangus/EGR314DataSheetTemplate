@@ -8,8 +8,8 @@ tags:
 ## Overview
 My subsystem for the project will be responsible for sensing water temperature in celsius, all components will run off a 3.3V power supply and will transmit the data to our Human Machine Interface(HMI) via UART that will be displayed to the user via an OLED display.
 
-
-
+## Decision making 
+For my block diagram the thought process was we needed some sort of sensor and one of our team members needed to use a pic we decided that I should use the sensor with the pic due to my familiarity with MPLab and it would help our team meet two of the project requirements freeing up other teammates to use the ESP32.
 
 ## Temperature Sensor Block Diagram 
 

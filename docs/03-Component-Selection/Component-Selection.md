@@ -8,7 +8,7 @@ The following sections are the selected major components necessary for my subsys
 
 ### Power Management
 
-I will proceed with option 3 for now because the other 2 regulators only offer 300 mA of output current which could potentially cause problems down the line if I need to add any other components to my subsystem the current draw could potentially exceed 300 mA.
+I will proceed with option 1 due to it's higher voltage input availability and it meeting the requirements of being a switching regulator although it is the most expensive of the three and will be the most difficult to solder due to it having pads instead of leads the pro's still outweigh the cones
 
 ### Sensor
 
@@ -22,17 +22,17 @@ I will move forward with option 2 due to it having all the required I2C and ISCP
 
 **Voltage Regulator**
 
-1. MIC5501-3.0YM5-TR
+1. MIC23050-SYML-TR
 
-    ![](VReg1.webp)
+    ![](VReg1.jpeg)
 
-    * $0.12/each
-    * [link to product](https://www.digikey.com/en/products/detail/microchip-technology/MIC5501-3-0YM5-TR/5277873)
+    * $0.53/each
+    * [link to product](https://www.digikey.com/en/products/detail/microchip-technology/MIC23050-SYML-TR/1980888)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Higher output voltage variance                                   |
-    | Small footprint                           | More difficult to surface mount                                  |
+    | Switching regulator                       | Difficult for smd                                                |
+    | Small footprint                           | More expensive                                                   |
 
 2. MIC5504-3.3YM5-TR
 
@@ -56,7 +56,7 @@ I will move forward with option 2 due to it having all the required I2C and ISCP
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
     | Output current of 600 mA                  | No over voltage protection                                       |
-    | -40 to +85 Celsius operating range        | Limited input voltage of 6V                                      |
+    | -40 to +85 Celsius operating range        | Non switching doesn't meet requirements                          |
 
 **Temperature Sensor**
 
@@ -135,3 +135,12 @@ I will move forward with option 2 due to it having all the required I2C and ISCP
     | 40 pin package                            | Most expensive                                                   |
     | Smallest footprint                        | Difficult to solder                                              |
     | High operating temperature range          | 
+
+    ## Final Components
+
+    | Component                                 | Selection                                                        |
+    | ----------------------------------------- | ---------------------------------------------------------------- |
+    | Microcontroller                           | PIC18F47K42                                                      |
+    | Voltage Regulator                         | MIC23050-SYML-TR                                                 |
+    | Temperature Sensor                        | TC74A4                                                           |
+    
