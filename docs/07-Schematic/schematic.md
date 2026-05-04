@@ -4,7 +4,7 @@ title: Module Schematic
 
 ## Overview
 
-This schematic is design to support temperature sensing in celsius by utilizing a TC74A4 and PIC18F47K42 and relay that information via UART and our team connectors to our control board being operated by Adrian.
+This schematic is designed to support temperature sensing in celsius by utilizing a TC74A4 and PIC18F47K42 and relay that information via UART and our team connectors to our control board being operated by Adrian.
 
 
 ![schematic](TempSensor314.png){style width:"350" height:"300;"}
