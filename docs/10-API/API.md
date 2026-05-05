@@ -25,37 +25,19 @@ My responsibility is to sense temperature and report the information to Adrian
 
 ### Message Type 3 — Print Sensor Value
 
-| Field         | Byte 1       | Byte 2        | Byte 3          | Byte 4          | Byte 5          |
-|---------------|--------------|---------------|-----------------|-----------------|-----------------|
-| Variable Name | message_type | subsys_#      | sensor_id       | upper_sensor_#  | lower_sensor_#  |
-| Variable Type | uint8_t      | uint8_t       | uint8_t         | int8_t          | int8_t          |
-| Min Value     | 3            | 5             | 1               | 0               | 0               |
-| Max Value     | 3            | 5             | 1               | 255             | 255             |
-| Example       | 3            | 5             | 1               | 0x01            | 0x2C            |
+|        3        |         0x03           |    Subsystem number  | Sensor number        | Upper sensor number          | Lower sensor number          | String Space          | String Space            | Print Sensor Value |
 
 Example: AZ511015YB
 
 ### Message Type 14 — Error Acknowledgement
 
-| Field         | Byte 1       | Byte 2        | Byte 3          | Byte 4     |
-|---------------|--------------|---------------|-----------------|------------|
-| Variable Name | message_type | subsys_#      | error_code      | sender_#   |
-| Variable Type | uint8_t      | uint8_t       | uint8_t         | int8_t     |
-| Min Value     | 10           | 2             | 0               | 5          |
-| Max Value     | 10           | 2             | 64              | 5          |
-| Example       | 10           | 2             | 12              | 5          |
+|        14       |         0x0E           |    Subsystem number  | Sending Subsystem Number | Upper number         | Lower number          | String Space          | String Space            | Subsystem error code response |
 
 Example: AZ52E2YB
 
 ### Message Type 15 — Alert Control to Subsystem Status
 
-| Field         | Byte 1       | Byte 2        | Byte 3          | Byte 4      |
-|---------------|--------------|---------------|-----------------|-------------|
-| Variable Name | message_type | subsys_#      | sender_#        | status_code |
-| Variable Type | uint8_t      | uint8_t       | uint8_t         | int8_t      |
-| Min Value     | 13           | 2             | 5               | 0           |
-| Max Value     | 13           | 2             | 5               | 10          |
-| Example       | 13           | 2             | 5               | 7           |
+|        15       |         0x0F           |    Subsystem number  | Sending Subsystem Number | Upper number         | Lower number          | String Space          | String Space            | Subsystem status code response |
 
 Example: AZ52F2YB
 
@@ -67,12 +49,6 @@ Example: AZ52F2YB
 
 ### Message Type 12 — Subsystem Status Request
 
-| Field         | Byte 1       | Byte 2        | Byte 3          |
-|---------------|--------------|---------------|-----------------|
-| Variable Name | message_type | subsys_#      | code            |
-| Variable Type | uint8_t      | uint8_t       | uint8_t         |
-| Min Value     | 12           | 5             | 0               |
-| Max Value     | 12           | 5             | 15              |
-| Example       | 12           | 5             | 4               |
+|        12       |         0x0C           |    Subsystem number  | Upper number         | Lower number          | String Space          | String Space          | String Space            | Subsystem status code |
 
 Example: AZ25CYB
