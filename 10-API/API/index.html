@@ -1443,19 +1443,127 @@
 <h2 id="messages-sent">Messages Sent</h2>
 <hr>
 <h3 id="message-type-3-print-sensor-value">Message Type 3 — Print Sensor Value</h3>
-<p>|        3        |         0x03           |    Subsystem number  | Sensor number        | Upper sensor number          | Lower sensor number          | String Space          | String Space            | Print Sensor Value |</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Message Num</strong></th>
+<th style="text-align: center;"><strong>Byte 1-2(uint16_t)</strong></th>
+<th style="text-align: center;"><strong>Byte 3 (uint8_t)</strong></th>
+<th style="text-align: center;"><strong>Byte 4 (uint8_t)</strong></th>
+<th style="text-align: center;"><strong>Byte 5 (uint8_t)</strong></th>
+<th style="text-align: center;"><strong>Byte 6 (uint8_t)</strong></th>
+<th style="text-align: center;"><strong>Byte 7 (uint8_t)</strong></th>
+<th style="text-align: center;"><strong>Byte 8 (uint8_t)</strong></th>
+<th style="text-align: center;"><strong>Purpose</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">0x03</td>
+<td style="text-align: center;">Subsystem number</td>
+<td style="text-align: center;">Sensor number</td>
+<td style="text-align: center;">Upper sensor number</td>
+<td style="text-align: center;">Lower sensor number</td>
+<td style="text-align: center;">String Space</td>
+<td style="text-align: center;">String Space</td>
+<td style="text-align: center;">Print Sensor Value</td>
+</tr>
+</tbody>
+</table>
 <p>Example: AZ511015YB</p>
 <h3 id="message-type-14-error-acknowledgement">Message Type 14 — Error Acknowledgement</h3>
-<p>|        14       |         0x0E           |    Subsystem number  | Sending Subsystem Number | Upper number         | Lower number          | String Space          | String Space            | Subsystem error code response |</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Message Num</strong></th>
+<th style="text-align: center;"><strong>Byte 1-2(uint16_t)</strong></th>
+<th style="text-align: center;"><strong>Byte 3 (uint8_t)</strong></th>
+<th style="text-align: center;"><strong>Byte 4 (uint8_t)</strong></th>
+<th style="text-align: center;"><strong>Byte 5 (uint8_t)</strong></th>
+<th style="text-align: center;"><strong>Byte 6 (uint8_t)</strong></th>
+<th style="text-align: center;"><strong>Byte 7 (uint8_t)</strong></th>
+<th style="text-align: center;"><strong>Byte 8 (uint8_t)</strong></th>
+<th style="text-align: center;"><strong>Purpose</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">0x0E</td>
+<td style="text-align: center;">Subsystem number</td>
+<td style="text-align: center;">Sending Subsystem Number</td>
+<td style="text-align: center;">Upper number</td>
+<td style="text-align: center;">Lower number</td>
+<td style="text-align: center;">String Space</td>
+<td style="text-align: center;">String Space</td>
+<td style="text-align: center;">Subsystem error code response</td>
+</tr>
+</tbody>
+</table>
 <p>Example: AZ52E2YB</p>
 <h3 id="message-type-15-alert-control-to-subsystem-status">Message Type 15 — Alert Control to Subsystem Status</h3>
-<p>|        15       |         0x0F           |    Subsystem number  | Sending Subsystem Number | Upper number         | Lower number          | String Space          | String Space            | Subsystem status code response |</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Message Num</strong></th>
+<th style="text-align: center;"><strong>Byte 1-2(uint16_t)</strong></th>
+<th style="text-align: center;"><strong>Byte 3 (uint8_t)</strong></th>
+<th style="text-align: center;"><strong>Byte 4 (uint8_t)</strong></th>
+<th style="text-align: center;"><strong>Byte 5 (uint8_t)</strong></th>
+<th style="text-align: center;"><strong>Byte 6 (uint8_t)</strong></th>
+<th style="text-align: center;"><strong>Byte 7 (uint8_t)</strong></th>
+<th style="text-align: center;"><strong>Byte 8 (uint8_t)</strong></th>
+<th style="text-align: center;"><strong>Purpose</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">0x0F</td>
+<td style="text-align: center;">Subsystem number</td>
+<td style="text-align: center;">Sending Subsystem Number</td>
+<td style="text-align: center;">Upper number</td>
+<td style="text-align: center;">Lower number</td>
+<td style="text-align: center;">String Space</td>
+<td style="text-align: center;">String Space</td>
+<td style="text-align: center;">Subsystem status code response</td>
+</tr>
+</tbody>
+</table>
 <p>Example: AZ52F2YB</p>
 <hr>
 <h2 id="messages-received">Messages Received</h2>
 <hr>
 <h3 id="message-type-12-subsystem-status-request">Message Type 12 — Subsystem Status Request</h3>
-<p>|        12       |         0x0C           |    Subsystem number  | Upper number         | Lower number          | String Space          | String Space          | String Space            | Subsystem status code |</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Message Num</strong></th>
+<th style="text-align: center;"><strong>Byte 1-2(uint16_t)</strong></th>
+<th style="text-align: center;"><strong>Byte 3 (uint8_t)</strong></th>
+<th style="text-align: center;"><strong>Byte 4 (uint8_t)</strong></th>
+<th style="text-align: center;"><strong>Byte 5 (uint8_t)</strong></th>
+<th style="text-align: center;"><strong>Byte 6 (uint8_t)</strong></th>
+<th style="text-align: center;"><strong>Byte 7 (uint8_t)</strong></th>
+<th style="text-align: center;"><strong>Byte 8 (uint8_t)</strong></th>
+<th style="text-align: center;"><strong>Purpose</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">0x0C</td>
+<td style="text-align: center;">Subsystem number</td>
+<td style="text-align: center;">Upper number</td>
+<td style="text-align: center;">Lower number</td>
+<td style="text-align: center;">String Space</td>
+<td style="text-align: center;">String Space</td>
+<td style="text-align: center;">String Space</td>
+<td style="text-align: center;">Subsystem status code</td>
+</tr>
+</tbody>
+</table>
 <p>Example: AZ25CYB</p>
 
 
