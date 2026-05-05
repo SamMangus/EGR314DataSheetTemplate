@@ -28,4 +28,4 @@ This PCB is designed to hold all the components necessary to make my subsystem f
 
 ## Resources
 
-The Zip folder of the gerber files [*here*](Mangus.Sam.Gerber.zip).
+The Gerber files as a zip download is available [*here*](Mangus.Sam.Gerber.zip), and the Zip folder of the project [*here*](TempSens314.zip).
