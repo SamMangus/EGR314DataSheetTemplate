@@ -35,4 +35,4 @@ To review the details of the API and message structure, you can review it in the
 
 To review the schematic for the subsystem design, you can review it in the ["Schematic"](https://sammangus.github.io/EGR314DataSheetTemplate/07-Schematic/schematic/) section of the datasheet.
 
-To review the modification I would make for the subsystem design, you can review it in the ["Hardware V2.0"](To review the schematic for the subsystem design, you can review it in the ["Hardware V2.0"](https://sammangus.github.io/EGR314DataSheetTemplate/12-Hardware%20V2.0/HardwareV2.0/) section of the datasheet.
+To review the modification I would make for the subsystem design, you can review it in the ["Hardware V2.0"](https://sammangus.github.io/EGR314DataSheetTemplate/12-Hardware%20V2.0/HardwareV2.0/) section of the datasheet.
